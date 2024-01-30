@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(variables.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 
 .container {
@@ -20,15 +22,24 @@ section {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    background-color: var(--body-color);
 }
 
 h1 {
-    color: rgb(226, 226, 226);
+    color: var(--title-color);
     text-shadow: 1px 1px 4px #000;
 }
 
+h2 {
+    color: var(--text-color);
+}
 
-/* ---------- Header ---------- */
+i {
+    color: var(--text-color);
+}
+
+
+/* ========== Header ========== */
 #header {
     position: fixed;
     top: 0;
@@ -37,68 +48,80 @@ h1 {
     padding: 20px 5%;
     background: transparent;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     z-index: 100;
 }
 
-#logo {
+/* -- Logo -- */
+#logo a {
     position: relative;
     font-size: 25px;
-    color: #ededed;
+    color: var(--title-color);
+    font-family: var(--title-font);
     text-decoration: none;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+#logo img {
+    width: 50%;
 }
 
-/* -- Navbar --*/
+/* -- Navbar -- */
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
 #navbar a {
     position: relative;
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text-color);
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s;
+    transition: .4s;
 }
 #navbar a:hover,
 #navbar a.active {
-    color:#00abf0;
+    color:var(--first-color);
 }
 
 
-/* ---------- Section Home ---------- */
+/* ========== Section Home ========== */
 .home {
-    background-color: rgb(36, 164, 138);
+
 }
 
 
-/*---------- Section About ----------*/
+/* ========== Section About ========== */
 .about {
     background-color: rgb(211, 79, 79);
 }
 
 
-/*---------- Section Menu ----------*/
+/* ========== Section Menu ========== */
 .menu {
     background-color: rgb(67, 91, 175);
 }
 
 
-/*---------- Section Service ----------*/
+/* ========== Section Service ========== */
 .service {
     background-color: rgb(191, 64, 191);
 }
 
 
-/*---------- Section Contact ----------*/
+/* ========== Section Contact ========== */
 .contact {
     background-color: rgb(219, 143, 21);
 }
 
 
-/* ---------- Responsive ---------- */
+/* ========== Responsive ========== */
 
-/*-- px --*/
+/* -- px -- */
 @media (max-width: px) {
 
 }

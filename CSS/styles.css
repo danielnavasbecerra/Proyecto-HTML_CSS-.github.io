@@ -23,19 +23,6 @@ section {
     background-color: var(--body-color);
 }
 
-h1 {
-    color: var(--title-color);
-    text-shadow: 1px 1px 4px #000;
-}
-
-h2 {
-    color: var(--text-color);
-}
-
-i {
-    color: var(--text-color-light);
-}
-
 
 /* ========== Header ========== */
 #header {
@@ -44,7 +31,8 @@ i {
     left: 0;
     width: 100%;
     padding: 20px 5%;
-    background: transparent;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.08);
+    background-color: var(--container-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,6 +86,7 @@ i {
 }
 
 /* -- Div Home Text -- */
+
 .home-text h1 {
     font-size: var(--biggest-font-size);
     color: var(--title-color);
@@ -110,6 +99,7 @@ i {
 
 /* Button */
 .btn {
+    box-shadow: var(--first-color) 0 0 10px 1px;
     display: inline-block;
     padding: 10px 20px;
     background: var(--first-color);
@@ -159,9 +149,15 @@ i {
 
 
 /* ========== Section Menu ========== */
+.menu {
+    display: grid;
+    align-content: center;
+}
 
-/* -- Heading -- */
+/* -- Div Menu Heading -- */
+/* -- Div Service Heading -- */
 .heading {
+    margin-bottom: 4rem;
     text-align: center;
 }
 .heading span {
@@ -172,16 +168,16 @@ i {
     font-size: var(--h2-font-size);
 }
 
-/* -- Menu Container -- */
+/* -- Div Menu Container -- */
 .menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     grid-gap: 1.5rem;
     align-items: center;
 }
+/* Div Menu BOX */
 .box {
     position: relative;
-    margin-top: 4rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -191,6 +187,7 @@ i {
     padding: 20px;
     border-radius: 0.5rem;
 }
+/* Div IMG */
 .box-img {
     width: 100%;
     height: 100%;
@@ -199,6 +196,7 @@ i {
     width: 100%;
     height: 100%;
 }
+/* Div Text */
 .box h2 {
     color: var(--text-color);
     font-size: 1.3rem;
@@ -214,6 +212,7 @@ i {
     color: var(--title-color);
     font-weight: 600;
 }
+/* Logo */
 .box .bx {
     background: var(--text-color);
     position: absolute;
@@ -226,8 +225,22 @@ i {
 
 
 /* ========== Section Service ========== */
-.service {
-    background-color: rgb(191, 64, 191);
+
+/* -- Div Service Container -- */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+}
+/* Div Service BOX */
+.s-box {
+    text-align: center;
+    padding: 20px 30px;
+}
+.s-box .iconos {
+    display: grid;
+    align-content: center;
+    height: 20px;
 }
 
 

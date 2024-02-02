@@ -7,8 +7,7 @@
     <link rel="icon" href="IMG/icono.ico">
     <title>Sushi</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -19,24 +18,26 @@
         <header id="header">
             
             <!-- Logo -->
-            <div id="logo">
-                <a href="#section-home">
-                    <img src="IMG/logo.png" alt="LOGO" >
-                    Sushi.
-                </a>
-            </div>
+            <a href="#section-home" id="logo">
+                <img src="IMG/logo.png" alt="LOGO" >
+                Sushi.
+            </a>
 
             <!-- Navbar -->
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <nav id="navbar">
-                <a href="#section-home">Home</a>
-                <a href="#section-about">About Us</a>
-                <a href="#section-menu">Food Menu</a>
-                <a href="#section-service">Services</a>
-                <a href="#section-contact">Contact Us</a>
-            </nav>
+            <div id="menu-icon">
+                <i class="ri-apps-2-line" ></i>
+            </div>
+            
+            <ul id="navbar">
+                <li><a href="#section-home">Home</a></li>
+                <li><a href="#section-about">About Us</a></li>
+                <li><a href="#section-menu">Food Menu</a></li>
+                <li><a href="#section-service">Services</a></li>
+                <li><a href="#section-contact">Contact Us</a></li>
+            </ul>
 
         </header>
+
 
         <!-- Section Home -->
         <section id="section-home" class="home">
@@ -56,6 +57,7 @@
 
         </section>
         
+
         <!-- Section About -->
         <section id="section-about" class="about">
             
@@ -77,6 +79,7 @@
             </div>
 
         </section> 
+
 
         <!-- Section Menu -->
         <section id="section-menu" class="menu">
@@ -101,7 +104,7 @@
                     <h3>Tasty Food</h3>
                     <span>$11.00</span>
                     <!-- Logo -->
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class="bx ri-shopping-cart-2-line"></i>
                 </div>
 
                 <!-- Div Menu BOX #2 -->
@@ -115,7 +118,7 @@
                     <h3>Tasty Food</h3>
                     <span>$11.00</span>
                     <!-- Logo -->
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class="bx ri-shopping-cart-2-line"></i>
                 </div>
 
                 <!-- Div Menu BOX #3 -->
@@ -129,13 +132,14 @@
                     <h3>Tasty Food</h3>
                     <span>$11.00</span>
                     <!-- Logo -->
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class="bx ri-shopping-cart-2-line"></i>
                 </div>
 
             </div>
 
         </section> 
         
+
         <!-- Section Service -->
         <section id="section-service" class="service">
 
@@ -151,7 +155,7 @@
                 <!-- Div Service BOX #1 -->
                 <div class="s-box">
                     <!-- IMG -->
-                    <i class="material-icons">add_box</i>
+                    <i class="ri-box-3-line"></i>
                     <!-- Text -->
                     <h3>Order</h3>
                     <p>There are many variations of passages of</p>
@@ -160,7 +164,7 @@
                 <!-- Div Service BOX #2 -->
                 <div class="s-box">
                     <!-- IMG -->
-                    <div class="iconos"> <i class="material-icons">local_shipping</i></div>                  <!-- Text -->
+                    <i class="ri-truck-line"></i>
                     <!-- Text -->
                     <h3>Shipping</h3>
                     <p>There are many variations of passages of</p>
@@ -169,7 +173,7 @@
                 <!-- Div Service BOX #3 -->
                 <div class="s-box">
                     <!-- IMG -->
-                    <div class="iconos"> <i class="material-icons">room</i></div>                  <!-- Text -->
+                    <i class="ri-road-map-line"></i>
                     <!-- Text -->
                     <h3>Delivered</h3>
                     <p>There are many variations of passages of</p>
@@ -178,10 +182,69 @@
             </div>
 
         </section> 
+        <!-- Call To Action -->
+        <section class="cta">
+            <h2>We make quality food <br> Everyday</h2>
+            <a href="#" class="btn">Let's Talk</a>
+        </section>
+
 
         <!-- Section Contact -->
         <section id="section-contact" class="contact">
-            <h1>Contact Us</h1>
+
+            <!-- Div Contact Footer -->
+            <div class="footer">
+
+                <!-- Div Main -->
+                <div class="main">
+
+                    <div class="col">
+                        <h4>Menu Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="col">
+                        <h4>Our Service</h4>
+                        <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Product Management</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Contact Us</h4>
+                        <div class="social">
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section> 
 
     </div>

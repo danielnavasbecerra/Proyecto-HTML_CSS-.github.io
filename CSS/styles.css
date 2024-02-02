@@ -225,6 +225,10 @@ section {
 
 
 /* ========== Section Service ========== */
+.service {
+    display: grid;
+    align-content: center;
+}
 
 /* -- Div Service Container -- */
 .service-container {
@@ -237,10 +241,12 @@ section {
     text-align: center;
     padding: 20px 30px;
 }
-.s-box .iconos {
+/* IMG */
+.s-box i {
     display: grid;
     align-content: center;
-    height: 20px;
+    font-size: 180px;
+    color: var(--first-color);
 }
 
 

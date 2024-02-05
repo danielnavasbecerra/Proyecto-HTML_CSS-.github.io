@@ -231,16 +231,27 @@ section {
 /* Button */
 .btn {
     box-shadow: var(--first-color) 0 0 10px 1px;
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--first-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--first-color);
     color: var(--container-color);
-    border-radius: 0.5rem;
-    transition: .4s;
+    font-weight: var(--font-medium);
+    border-radius: 4rem;
+    transition: background .3s;
+}
+
+.btn i {
+    font-size: 1.5rem;
+    transition: transform .3s;
 }
 
 .btn:hover {
-    transform: scale(1.2) translateX(10px);
+    background-color: var(--first-color-alt);
+}
+.btn:hover i{
+    transform: translateX(.25rem);
 }
 
 /* -- Div Home IMG -- */
@@ -624,6 +635,9 @@ section {
 
 /* -- 575px -- */
 @media (max-width: 575px) {
+    .home-title {
+        font-size: var(--);
+    }
     .col {
         width: 100%;
     }

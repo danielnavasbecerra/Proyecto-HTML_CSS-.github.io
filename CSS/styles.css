@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url(variables.css);
 
 * {
@@ -56,10 +57,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 .container {
     height: 100vh;
@@ -72,6 +69,24 @@ section {
 
 
 /* ========== Reusable CSS Classes ========== */
+.section_title {
+    font-family: var(--title-font);
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+}
+.section_subtitle {
+    display: block;
+    font-family: var(--subtitle-font);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: .5rem;
+}
+
+.section_title,
+.section_subtitle {
+    text-align: center;
+}
+
 @keyframes show {
     from {
         opacity: 0;
@@ -91,8 +106,7 @@ section {
 .menu-container,
 .service-container,
 .cta,
-.footer,
-img{
+.footer{
     view-timeline-name: --section;
     view-timeline-axis: block;
     
@@ -255,7 +269,7 @@ img{
 .home-img-2 {
     width: 100px;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 3rem;
     transform: rotate(-15deg);
 }
 
@@ -305,6 +319,7 @@ img{
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 1.5rem;
     align-items: center;
+    text-align: center;
 }
 
 /* -- Div About IMG -- */
@@ -312,12 +327,26 @@ img{
     max-width: 100%;
     width: 480px;
     height: auto;
+    justify-self: center;
+}
+
+.about-img-1 {
+    width: 100px;
+    opacity: .2;
+    position: absolute;
+    right: 1.5rem;
+    transform: rotate(-15deg);
 }
 
 /* -- Div About Text -- */
-.about-text span {
-    color: var(--title-color);
-    font-weight: 600;
+.about_title img {
+    width: 30px;
+}
+.about_title div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
 }
 
 .about-text h2 {
@@ -342,13 +371,8 @@ img{
 /* -- Div Menu Heading -- */
 /* -- Div Service Heading -- */
 .heading {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
     text-align: center;
-}
-
-.heading span {
-    color: var(--title-color);
-    font-weight: 600;
 }
 
 .heading h2 {
@@ -359,7 +383,7 @@ img{
 .menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    grid-gap: 1.5rem;
+    grid-gap: 3.5rem;
     align-items: center;
 }
 
@@ -391,13 +415,13 @@ img{
 }
 
 .box:hover .box-img img {
-    transform: translateY(-.25rem);
+    transform: translateY(-.30rem);
 }
 
 /* Div Text */
 .box h2 {
-    color: var(--text-color);
     font-size: var(--h3-font-size);
+    font-family: var(--title-font);
     margin-bottom: .25rem;
 }
 
@@ -405,26 +429,35 @@ img{
     color: var(--text-color);
     font-size: var(--smaller-font-size);
     font-weight: 400;
-    margin: 4px 0 10px;
+    margin-bottom: 1rem;
 }
 
 .box span {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     color: var(--first-color);
-    font-weight: 600;
 }
 
 /* Logo */
-.box i {
+.box i{
+    display: flex;
     background-color: var(--first-color);
     color: var(--container-color);
+    box-shadow: 0 4px 20px hsla(19, 64%, 20%, .4);
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 5px;
     font-size: 20px;
-    padding: 7px 10px;
-    border-radius: 0 0.5rem 0 0.5rem;
+    padding: 6px;
+    border-radius: 40%;
+    border: none;
+    font-size: 1.25rem;
+    outline: none;
+    cursor: pointer;
+    transition: background .3s;
+}
+.box i:hover {
+    background-color: var(--first-color-alt);
 }
 
 

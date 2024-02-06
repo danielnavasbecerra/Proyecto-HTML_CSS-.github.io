@@ -74,6 +74,7 @@ section {
     font-size: var(--h1-font-size);
     margin-bottom: 1.5rem;
 }
+
 .section_subtitle {
     display: block;
     font-family: var(--subtitle-font);
@@ -106,10 +107,10 @@ section {
 .menu-container,
 .service-container,
 .cta,
-.footer{
+.footer {
     view-timeline-name: --section;
     view-timeline-axis: block;
-    
+
     animation-timeline: --section;
     animation-name: show;
 
@@ -295,7 +296,8 @@ section {
 .btn:hover {
     background-color: var(--first-color-alt);
 }
-.btn:hover i{
+
+.btn:hover i {
     transform: translateX(.25rem);
 }
 
@@ -342,6 +344,7 @@ section {
 .about_title img {
     width: 30px;
 }
+
 .about_title div {
     display: flex;
     justify-content: center;
@@ -405,7 +408,7 @@ section {
 /* Div IMG */
 .box-img {
     width: 100%;
-    height: 100%;   
+    height: 100%;
 }
 
 .box-img img {
@@ -439,7 +442,7 @@ section {
 }
 
 /* Logo */
-.box i{
+.box i {
     display: flex;
     background-color: var(--first-color);
     color: var(--container-color);
@@ -456,6 +459,7 @@ section {
     cursor: pointer;
     transition: background .3s;
 }
+
 .box i:hover {
     background-color: var(--first-color-alt);
 }
@@ -463,6 +467,8 @@ section {
 
 /* ========== Section Service ========== */
 .service {
+    width: 100%;
+    min-height: 40vh;
     display: grid;
     align-content: center;
 }
@@ -497,20 +503,94 @@ section {
     line-height: 1.7;
 }
 
-/* -- CTA -- */
-.cta {
-    background: var(--text-color-light);
-    padding: 70px 0;
-    text-align: center;
-    width: 60%;
-    margin: 100px auto;
-    border-radius: 10px;
+.service-img {
+    width: 25px;
+    position: absolute;
+    transform: rotate(30deg);
 }
 
-.cta h2 {
-    font-size: 2rem;
+.service-img-1,
+.service-img-2 {
+    position: absolute;
+    opacity: .2;
+}
+
+.service-img-1 {
+    width: 90px;
+    left: 0;
+    transform: rotate(15deg);
+}
+
+.service .service-img-2 {
+    width: 40px;
+    right: 1rem;
+    transform: rotate(-30deg);
+}
+
+/* -- CTA -- */
+.cta {
+    width: 100%;
+    min-height: 40vh;
+    text-align: center;
+}
+
+.cta_container {
+    position: relative;
+}
+
+.cta_content {
+    position: relative;
+    background-color: hsl(19, 14%, 15%);
+    border-radius: 2.5rem;
+    padding: 5rem 1rem 3rem;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.cta_img {
+    width: 250px;
+    position: absolute;
+    top: -4.5rem;
+    left: -8rem;
+}
+
+.cta_data .section_title {
+    color: var(--body-color);
+    margin-bottom: 2rem;
+}
+
+.cta_form {
+    background-color: var(--body-color);
+    padding: 5px 5px 5px 16px;
+    border-radius: 4rem;
+    display: flex;
+    column-gap: .5rem;
+}
+
+.cta_input,
+.cta_button {
+    font-family: var(--body-font);
+    border: none;
+    outline: none;
+}
+
+.cta_input {
+    width: 90%;
     color: var(--text-color);
-    margin-bottom: 30px;
+    background-color: var(--body-color);
+}
+
+.cta_button {
+    cursor: pointer;
+}
+
+.cta_spinach {
+    width: 30px;
+    position: absolute;
+    right: 2rem;
+    bottom: -2rem;
+    transform: rotate(45deg);
 }
 
 
@@ -534,7 +614,7 @@ section {
 .col h4 {
     font-size: 1.2rem;
     color: var(--text-color);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -717,6 +797,7 @@ section {
     .home-title {
         font-size: var(--);
     }
+
     .col {
         width: 100%;
     }
